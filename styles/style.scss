@@ -1,0 +1,43 @@
+
+@import "./variables";
+
+
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+.homeContainer{
+
+    @include flexCenter();
+    height: 100vh;
+    color: white;
+    background-color: lightcoral;
+}
+
+.aboutContainer{
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+}
+
+.projectsContainer{
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+.contactContainer{
+    height: 100vh;
+    background-color: lightseagreen;
+}
+

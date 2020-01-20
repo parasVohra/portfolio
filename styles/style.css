@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: lightblue;
+}
+
+.homeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  color: white;
+  background-color: lightcoral;
+}
+
+.aboutContainer {
+  height: 100vh;
+  background-color: lightgoldenrodyellow;
+}
+
+.projectsContainer {
+  height: 100vh;
+  background-color: lightgreen;
+}
+
+.contactContainer {
+  height: 100vh;
+  background-color: lightseagreen;
+}
+/*# sourceMappingURL=style.css.map */
