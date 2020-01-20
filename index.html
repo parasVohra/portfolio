@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="rootContiner">
+    <div class="rootContainer">
         <div class="homeContainer">
-            Pursharth Vohra
+
+            <div class="homeLogo">
+                PV
+            </div>         
+                <div class="menuButton" onclick="menuTrigger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="bar4"></div>
+                    <div class="menuSlider">
+                        <li class="menuItem">Home</li>
+                        <li class="menuItem">Projects</li>
+                        <li class="menuItem">About Me</li>
+                        <li class="menuItem">Contact</li>
+                        <li class="menuItem">Resume</li>
+                        <div>paras</div>
+                    </div>
+                </div>
+            
+           <p>Pursharth Vohra</p>
         </div>
 
         <div class="aboutContainer">
@@ -18,7 +37,11 @@
         </div>
 
         <div class="projectsContainer">
-
+            <div class="project p1">d</div>
+            <div class="project p2">f</div>
+            <div class="project p3">d</div>
+            <div class="project p4">e</div>
+            <div class="project p5">s</div>
         </div>
 
         <div class="contactContainer">
@@ -29,5 +52,11 @@
         </div>
 
     </div>
+    <script>
+        function menuTrigger(x) {
+            console.log("clicked")
+          x.classList.toggle("change");
+        }
+        </script>
 </body>
 </html>

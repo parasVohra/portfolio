@@ -1,9 +1,86 @@
+.menuButton {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+
+.menuButton .bar1, .menuButton .bar2, .menuButton .bar4 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 3;
+  border-radius: 5px;
+}
+
+.menuButton .bar3 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
+  z-index: 3;
+  border-radius: 5px;
+}
+
+.menuButton .menuSlider {
+  position: fixed;
+  right: -50%;
+  height: 100vh;
+  width: 40%;
+  color: white;
+  top: 0px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.menuButton .menuSlider li {
+  list-style: none;
+}
+
+.menuButton .menuSlider .menuItem {
+  position: relative;
+  float: left;
+}
+
+.change .bar1 {
+  opacity: 0;
+}
+
+.change .bar2 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar3 {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  -webkit-transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.change .bar4 {
+  opacity: 0;
+}
+
+.change .menuSlider {
+  right: 0 !important;
+}
+
 body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: lightblue;
+}
+
+.rootContainer {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .homeContainer {
@@ -21,6 +98,16 @@ body {
   background-color: lightcoral;
 }
 
+.homeLogo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+  color: black;
+  font-size: 20px;
+}
+
 .aboutContainer {
   height: 100vh;
   background-color: lightgoldenrodyellow;
@@ -28,7 +115,44 @@ body {
 
 .projectsContainer {
   height: 100vh;
+  display: gird;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  -ms-grid-rows: 20px 20px;
+      grid-template-rows: 20px 20px;
   background-color: lightgreen;
+      grid-template-areas: "p1 p2 p3", "p4 p5";
+}
+
+.p1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: p1;
+}
+
+.p2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: p2;
+}
+
+.p3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: p3;
+}
+
+.p4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: p4;
+}
+
+.p5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: p5;
 }
 
 .contactContainer {
