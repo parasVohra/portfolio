@@ -75,7 +75,6 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: lightblue;
 }
 
 .rootContainer {
@@ -110,8 +109,30 @@ body {
 
 .aboutContainer {
   height: 100vh;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 600px;
+  border-radius: 12px;
+  box-shadow:  5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
+
 }
+
+.designer{
+
+}
+
+.frontEnd{
+  border-top: solid #E6ECF8 1px;
+  border-bottom:solid #E6ECF8 1px ;
+
+}
+.backEnd{
+
+}
+
+
 
 .projectsContainer {
   height: 100vh;
