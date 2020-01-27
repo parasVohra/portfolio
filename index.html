@@ -19,13 +19,13 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                     <div class="bar4"></div>
-                    <div class="menuSlider">
-                        <li class="menuItem">Home</li>
-                        <li class="menuItem">Projects</li>
-                        <li class="menuItem">About Me</li>
-                        <li class="menuItem">Contact</li>
-                        <li class="menuItem">Resume</li>
-                    </div>
+                </div>
+                <div class="menuSlider" id="sliderBar">
+                    <li class="menuItem">Home</li>
+                    <li class="menuItem">Projects</li>
+                    <li class="menuItem">About Me</li>
+                    <li class="menuItem">Contact</li>
+                    <li class="menuItem">Resume</li>
                 </div>
             
            <p>Pursharth Vohra</p>
@@ -112,7 +112,11 @@
     <script>
         function menuTrigger(x) {
             console.log("clicked")
-          x.classList.toggle("change");
+            x.classList.toggle("change");
+
+            let element = document.getElementById("sliderBar");
+            element.classList.toggle("changed");
+
         }
         </script>
 </body>
