@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Vegan Hood</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/vegan.css">
+</head>
+<body>
+    <div class="rootContainer">
+
+        <!-- nav bar  -->
+        <div class="homeContainer">
+
+            <div class="homeLogo">
+                PV
+            </div>         
+                <div class="menuButton" onclick="menuTrigger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="bar4"></div>
+                </div>
+                    <div class="menuSlider" id="sliderBar">
+                        <li class="menuItem">Home</li>
+                        <li class="menuItem">Projects</li>
+                        <li class="menuItem">About Me</li>
+                        <li class="menuItem">Contact</li>
+                        <li class="menuItem">Resume</li>
+                    </div>
+                
+
+        </div> 
+
+        <div class="content">
+            <!-- images and gifs of project -->
+
+            <!-- project summary  -->
+            Explorergetaway is a freelance project. The objective of this project is to make a interactive website to help my client travel bissiness.
+
+            <!-- technical sheet -->
+
+            <div> Technical Sheet</div>
+
+            <div>Angular, Node.js, Express, JSON</div> 
+
+            <!-- wireframe or sketches -->
+
+            <div>
+                
+            </div>
+
+
+        </div>
+
+        <!-- footer section -->
+        <div class="footerConatiner">
+
+        </div>
+
+    </div>
+    <script>
+        function menuTrigger(x) {
+            console.log("clicked")
+            x.classList.toggle("change");
+
+            let element = document.getElementById("sliderBar");
+            element.classList.toggle("changed");
+
+        }
+        </script>
+    
+</body>
+</html>

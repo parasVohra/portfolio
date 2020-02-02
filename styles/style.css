@@ -7,6 +7,23 @@
   z-index: 4;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.homeContent{
+ 
+  width: 100%;
+
+}
+
+.homeQuote{
+  
+  width:100%;
+}
+
 .menuButton .bar1, .bar2, .bar4 {
   width: 35px;
   height: 5px;
@@ -94,18 +111,12 @@ body {
 }
 
 .homeContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  color: white;
-  background-color: lightcoral;
+  color: black;
+  background-color: white;
 }
 
 .homeLogo {
@@ -131,7 +142,6 @@ body {
 }
 
 .designer{
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 70%);
   background-color: white;
   box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
 
@@ -140,7 +150,6 @@ body {
 .frontEnd{
   border-top: solid #E6ECF8 1px;
   border-bottom:solid #E6ECF8 1px ;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 85%, 0 80%);
   background-color: white;;
   box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
 
@@ -148,7 +157,6 @@ body {
 
 }
 .backEnd{
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 80%);
   background-color: white;;
   box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
 
