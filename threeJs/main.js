@@ -2,6 +2,16 @@
 let scene, camera, renderer, cube , snow, snowGeo, snowFlake, snowCount = 25000;
 var raycaster, intersects;
 var mouse, INTERSECTED;
+
+
+var mouseX = 0;
+    var mouseY = 0;
+
+    var targetX = 0;
+    var targetY = 0;
+
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
 function init(){
     scene = new THREE.Scene();
 
@@ -48,9 +58,24 @@ function init(){
 
     // snow code ends
 
+    //camera motion
+    
+
+    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+
+    //camera motion ends
+
     
     
     camera.position.z = 5;
+}
+
+function onDocumentMouseMove( event ) {
+
+    mouseX = ( event.clientX - windowHalfX );
+    mouseY = ( event.clientY - windowHalfY );
+
 }
 
 
@@ -69,17 +94,20 @@ function animate() {
     });
 
 
+    targetX = mouseX * .001;
+    targetY = mouseY * .001;
+
+    if ( scene ) {
+
+        scene.rotation.y += 0.02 * ( targetX - scene.rotation.y );
+        scene.rotation.x += 0.02 * ( targetY - scene.rotation.x );
+
+    }
+
+
 
     snowGeo.verticesNeedUpdate = true;
     renderer.render(scene, camera);
-}
-function onDocumentMouseMove( event ) {
-
-    event.preventDefault();
-
-    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-
 }
 
 

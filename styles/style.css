@@ -136,17 +136,34 @@ canvas{
   left: 15px;
   height: 20px;
   width: 20px;
-  color: white;
+  color: #ff5722;
   font-size: 50px;
 }
 /*   about section */
+
+.aboutContentBox{
+  height: 300px;
+  width: 100vw;
+}
+
+.aboutContent{
+  height: 300px;
+  background-color: #ff5722;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+}
 
 .aboutContainer {
   height: 600px;
   padding-top: 10px;
   margin-left: 20vw;
   margin-right: 20vw;
-  margin-top: 50px;
+  margin-top: -50px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -157,8 +174,7 @@ canvas{
   padding-left: 10px;
   padding-right: 10px;
 
-  background: rgb(38,42,52);
-  background: linear-gradient(180deg, rgba(38,42,52,1) 0%, rgba(38,42,52,0.7609418767507002) 100%);
+  /*background: rgb(38,42,52);*/
 }
 
 .Icon{
@@ -221,12 +237,18 @@ canvas{
 }
 
 
+.projectWrapper{
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
 
+}
 .projectsContainer {
   margin-left: 20vw;
   margin-right: 20vw;
-  margin-top: 50px;
-  margin-bottom: 50px;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -236,44 +258,59 @@ canvas{
   background-color: white;
 }
 
-.p1 {
+.projectHeading{
   grid-row: 1/2;
+  grid-column: 1/4;
+  text-align: center;
+  line-height: 200px;
+  font-size: 40px;
+}
+
+.p1 {
+  grid-row: 2/3;
   grid-column: 1/2;
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #ff5722;
 
   
 }
 
 .p2 {
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 2/3;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
 }
 
 .p3 {
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 3/4;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
 }
 
 .p4 {
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 1/2;
 
 }
 
 .p5 {
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 2/3;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
+}
+
+.project{
+  border-radius: 10px;
+  text-align: center;
+  line-height: 200px;
+  border-color: #ff5722;
 }
 
 .project a {
