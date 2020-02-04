@@ -9,6 +9,13 @@ body {
   background-color: #262a34;
 }
 
+li{
+  list-style: none;
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
 
 .menuButton {
   position: fixed;
@@ -132,9 +139,10 @@ canvas{
   color: white;
   font-size: 50px;
 }
+/*   about section */
 
 .aboutContainer {
-  height: auto;
+  height: 600px;
   padding-top: 10px;
   margin-left: 20vw;
   margin-right: 20vw;
@@ -144,7 +152,7 @@ canvas{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
 
-  grid-gap: 10px;
+  grid-gap: 5px;
 
   padding-left: 10px;
   padding-right: 10px;
@@ -153,35 +161,63 @@ canvas{
   background: linear-gradient(180deg, rgba(38,42,52,1) 0%, rgba(38,42,52,0.7609418767507002) 100%);
 }
 
-.devCard {}
+.Icon{
+  margin-top: 20px;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.backendIcon{
+  margin-top: 20px;
+  height: 80px;
+  width: 80px;
+
+}
+
+.cardTitle{
+  font-weight: 700;
+  font-size: 20px;
+  color: #262a34;
+  margin-bottom: 20px ;
+}
+
+.cardHeading{
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #ff5722;
+}
+
+.cardContent{
+  font-size: small;
+  font-weight: lighter;
+}
+
+.devCard {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .designer {
   border-radius: 12px;
-  padding: 10px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(213, 231, 208, 0.7525385154061625) 0%, rgba(0, 212, 255, 1) 100%);
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  background:white;
+  text-align: center;
 
 }
 
 .frontEnd {
   border-radius: 12px;
-  border-top: solid #E6ECF8 1px;
-  border-bottom: solid #E6ECF8 1px;
   background-color: white;
-  ;
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-
-
+  text-align: center;
 
 }
 
 .backEnd {
   border-radius: 12px;
   background-color: white;
-  ;
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-
+  text-align: center;
 }
 
 
