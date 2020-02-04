@@ -1,3 +1,15 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #262a34;
+}
+
+
 .menuButton {
   position: fixed;
   right: 15px;
@@ -7,27 +19,34 @@
   z-index: 4;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
 }
 
+canvas{
+  height: 100vh;
+  width: 100vw;
+}
 
-.homeContent{
- 
+
+.homeContent {
+
   width: 100%;
 
 }
 
-.homeQuote{
-  
-  width:100%;
+.homeQuote {
+
+  width: 100%;
 }
 
-.menuButton .bar1, .bar2, .bar4 {
+.menuButton .bar1,
+.bar2,
+.bar4 {
   width: 35px;
   height: 5px;
-  background-color: rgb(26, 13, 13);
+  background-color: white;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -37,7 +56,7 @@ a{
 .menuButton .bar3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: black;
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -48,7 +67,7 @@ a{
   width: 30vw;
   color: white;
   top: 0px;
-  background-color:rgb(145, 90, 90);
+  background-color: rgba(66, 87, 97, 0.35);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   display: grid;
@@ -59,10 +78,7 @@ a{
   padding-top: 15vh;
 }
 
-.menuItem{
-
-
-}
+.menuItem {}
 
 .menuSlider li {
   list-style: none;
@@ -98,25 +114,13 @@ a{
   right: 0 !important;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-.rootContainer {
-  margin-left: 20vw;
-  margin-right: 20vw;
-}
+
+.rootContainer {}
 
 .homeContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  color: black;
-  background-color: white;
+  color: aqua;
 }
 
 .homeLogo {
@@ -125,91 +129,119 @@ body {
   left: 15px;
   height: 20px;
   width: 20px;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 50px;
 }
 
 .aboutContainer {
-  height: 100vh;
-  background-color: white;
+  height: auto;
   padding-top: 10px;
-
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
-  border-radius: 12px;
+
   grid-gap: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: rgb(38,42,52);
+  background: linear-gradient(180deg, rgba(38,42,52,1) 0%, rgba(38,42,52,0.7609418767507002) 100%);
 }
 
-.designer{
-  background-color: white;
-  box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
+.devCard {}
+
+.designer {
+  border-radius: 12px;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(213, 231, 208, 0.7525385154061625) 0%, rgba(0, 212, 255, 1) 100%);
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
 }
 
-.frontEnd{
+.frontEnd {
+  border-radius: 12px;
   border-top: solid #E6ECF8 1px;
-  border-bottom:solid #E6ECF8 1px ;
-  background-color: white;;
-  box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
+  border-bottom: solid #E6ECF8 1px;
+  background-color: white;
+  ;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
 
 
 }
-.backEnd{
-  background-color: white;;
-  box-shadow:  5px 5px 5px rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
+
+.backEnd {
+  border-radius: 12px;
+  background-color: white;
+  ;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
 }
 
 
 
 .projectsContainer {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-rows: 200px 200px;
   grid-auto-rows: 200px;
-  background-color: lightgreen;
+  background-color: white;
 }
 
 .p1 {
- grid-row: 1/2;
- grid-column: 1/2;
- background-color: saddlebrown;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+
   
 }
 
 .p2 {
   grid-row: 1/2;
- grid-column: 2/3;
- background-color: lightyellow;
+  grid-column: 2/3;
+
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
 }
 
 .p3 {
   grid-row: 1/2;
- grid-column: 3/4;
- background-color: blue;
+  grid-column: 3/4;
+
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
 }
 
 .p4 {
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 
   grid-row: 2/3;
   grid-column: 1/2;
-  background-color: navy;
+
 }
 
 .p5 {
   grid-row: 2/3;
- grid-column: 2/3;
- background-color: palevioletred;
-  
+  grid-column: 2/3;
+
+  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+
 }
 
-.project{
+.project a {
+  color :black;
 }
 
 .contactContainer {

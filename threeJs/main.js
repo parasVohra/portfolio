@@ -1,6 +1,7 @@
 
-let scene, camera, renderer, cube;
-
+let scene, camera, renderer, cube , snow, snowGeo, snowFlake, snowCount = 25000;
+var raycaster, intersects;
+var mouse, INTERSECTED;
 function init(){
     scene = new THREE.Scene();
 
@@ -10,41 +11,75 @@ function init(){
         0.1,
         1000
     );
+
+    scene.background = new THREE.Color( 0x252934 );
     
     renderer = new THREE.WebGLRenderer({antialias: true});
     
     renderer.setSize(window.innerWidth, window.innerHeight);
     
-    document.body.appendChild(renderer.domElement);
+    document.getElementById('canvas').appendChild(renderer.domElement);
+
+    //snow code
+
+    snowGeo = new THREE.Geometry();
+    for (let i = 0; i < snowCount; i++){
+        snowFlake = new THREE.Vector3(
+            Math.random() * 600 -200,
+            Math.random() * 600 -200,
+            Math.random() * 600 -200
+        );
+
+        snowFlake.velocity = 0;
+        snowFlake.accelaration = 0.001;
+        snowGeo.vertices.push(snowFlake);
+    }
+
+
+    const snowMaterial = new THREE.PointsMaterial({
+        color:0xffffff,
+        size: 0.3,
+        transparent: true
+    })
+
+    snow = new THREE.Points(snowGeo, snowMaterial);
+    scene.add(snow);
     
-    //const geometry = new THREE.Geometry( 2, 2, 2 );
-    const geometry = new THREE.BufferGeometry();
-    const vertices = new Float32Array([
-        -1.0, -1.0, 0.0,
-        1.0, -1.0, 0.0,
-        1.0, 1.0, 0.0
-    ])
 
-    geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    // snow code ends
+
     
-   // const texture = new THREE.TextureLoader().load('metal.jpg')
-    const material = new THREE.MeshBasicMaterial( {color: 'white'} );
-
-
-
-    cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
     
-    camera.position.z = 9;
+    camera.position.z = 5;
 }
 
 
 function animate() {
     requestAnimationFrame(animate);
 
-    cube.position.x += 0.01;
+    snowGeo.vertices.forEach( p=>{
+        p.velocity += p.accelaration;
+        p.y -= p.velocity;
 
+        if(p.y < -200){
+            p.y = 200;
+
+            p.velocity = 0
+        }
+    });
+
+
+
+    snowGeo.verticesNeedUpdate = true;
     renderer.render(scene, camera);
+}
+function onDocumentMouseMove( event ) {
+
+    event.preventDefault();
+
+    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
 }
 
 
@@ -57,4 +92,3 @@ function onWindowResize(){
 window.addEventListener('resize', onWindowResize, false)
 init();
 animate();
-
