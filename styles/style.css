@@ -144,6 +144,7 @@ canvas{
 .aboutContentBox{
   height: 300px;
   width: 100vw;
+  
 }
 
 .aboutContent{
@@ -168,9 +169,7 @@ canvas{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
-
   grid-gap: 5px;
-
   padding-left: 10px;
   padding-right: 10px;
 
