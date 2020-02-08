@@ -1,0 +1,196 @@
+.projectTitle{
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    color: white;
+    font-size: 40px;
+}
+
+.content{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    top: 40vh;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:400px 500px auto;
+    grid-row-gap: 100px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.techUsed{
+
+    grid-column: 1/3 ;
+    grid-row: 1/2 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 20px;
+
+}
+
+.techHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3 ;
+    grid-row: 1/2 ;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.techIcons{
+    grid-column: 1/2 ;
+    grid-row: 2/3 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 40px;
+}
+
+.techIcons li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.techName{
+    grid-column: 2/3 ;
+    grid-row: 2/3 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 40px;
+    font-size: 20px;
+}
+
+.techName li{
+    line-height: 30px;
+    font-weight: bolder;
+}
+.techIcon{
+    height: 30px ;
+    width: 30px;
+}
+
+.projectDesktopGif{
+    display: flex;
+    justify-content: right;
+    grid-column: 3/7;
+    grid-row: 1/2 ;
+    background-image: url("../images/Screenshot\ 2020-02-07\ at\ 10.24.26\ AM.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    box-shadow: 4px 4px 12px black;
+    
+
+}
+
+
+.projectMobileGif{
+    grid-column: 1/4;
+    grid-row: 2/3 ;
+    background-image: url("../images/vegan1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    box-shadow: 4px 4px 12px black;
+    display: flex;
+    justify-content: right;
+    margin-left: 10vw;
+    margin-right: 10vw;
+   
+
+
+}
+
+.projectFeatues{
+    grid-column: 4/7 ;
+    grid-row: 2/3;
+
+   
+
+}
+
+.featuresHeading{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.featuresContent li{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.summaryHeading{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.projectSummary{
+    font-size: 15px; 
+    font-weight: lighter;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.result{
+    grid-column: 1/7 ;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.resultGallary{
+    grid-column: 1/7 ;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 40px;
+}
+
+.resultPics{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 12px black;
+}
+
+.pic1{
+    background-image: url(../images/vegan1.png);
+}
+.pic2{
+    background-image: url(../images/vegan1.png);
+}
+.pic3{
+    background-image: url(../images/vegan1.png);
+}
+.pic4{
+    background-image: url(../images/vegan1.png);
+}
+.pic5{
+    background-image: url(../images/vegan1.png);
+}
+.pic6{
+    background-image: url(../images/vegan1.png);
+}
+
+
+
+
+
+
