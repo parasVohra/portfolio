@@ -2,11 +2,27 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@font-face {
+  font-family: 'LogoFont';
+  src: url('../fonts/AboveDemoRegular-lJMd.ttf')  format('truetype');
+}
+
+
+.hide{
+  opacity: 0;
+  transition: all  0.2s;
+}
+.show{
+ opacity: 1;
+  transition: all 0.2s;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: #262a34;
+  -webkit-font-smoothing: antialiased;
 }
 
 li{
@@ -85,7 +101,9 @@ canvas{
   padding-top: 15vh;
 }
 
-.menuItem {}
+.menuItem a:hover {
+  color: #ff5722;
+}
 
 .menuSlider li {
   list-style: none;
@@ -94,6 +112,31 @@ canvas{
 .menuSlider .menuItem {
   position: relative;
   float: left;
+}
+
+
+
+.desktopMenu{
+  position: absolute;
+  right: 100px;
+  width: 50vw;
+  top:20px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-column-gap: 10px;
+  color: white;
+}
+
+.deskMenuOptions{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.deskMenuOptions a:hover {
+  color: #ff5722;
 }
 
 .change .bar1 {
@@ -123,7 +166,9 @@ canvas{
 
 
 
-.rootContainer {}
+.rootContainer {
+  scroll-behavior: smooth;
+}
 
 .homeContainer {
   height: 100vh;
@@ -131,13 +176,15 @@ canvas{
 }
 
 .homeLogo {
+  font-family: 'LogoFont';
   position: absolute;
   top: 15px;
   left: 15px;
   height: 20px;
   width: 20px;
   color: #ff5722;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 40px;
 }
 /*   about section */
 
@@ -256,9 +303,9 @@ canvas{
   
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 100vh;
+  min-height: 120vh;
   width: 100vw;
-  background-color: white;
+  background-color: #f4f4f4;
 
 }
 .projectsContainer {
@@ -268,9 +315,9 @@ canvas{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  grid-template-rows: 200px 200px;
-  grid-auto-rows: 200px;
-  background-color: white;
+  grid-template-rows: 150px 300px;
+  grid-auto-rows: 300px;
+  background-color: #f4f4f4;
 }
 
 .projectHeading{
@@ -284,7 +331,6 @@ canvas{
 .p1 {
   grid-row: 2/3;
   grid-column: 1/2;
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5), 0 0 0 1px #ff5722;
   background-image: url("../images/vegan1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -292,16 +338,10 @@ canvas{
   
 }
 
-.veganImg{
-  height: 10px;
-  width: 10px;
-}
-
 .p2 {
   grid-row: 2/3;
   grid-column: 2/3;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
 }
 
@@ -309,12 +349,10 @@ canvas{
   grid-row: 2/3;
   grid-column: 3/4;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
 }
 
 .p4 {
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
   grid-row: 3/4;
   grid-column: 1/2;
@@ -325,15 +363,36 @@ canvas{
   grid-row: 3/4;
   grid-column: 2/3;
 
-  box-shadow: 5px 5px 5px rgba(233, 240, 243, 0.5),0 0 0 1px #ff5722;
 
 }
 
 .project{
-  border-radius: 10px;
-  text-align: center;
-  line-height: 200px;
-  border-color: #ff5722;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 4px 4px 12px black;
+  transition: all 0.2s ease;
+}
+
+.project a{
+  line-height: 
+}
+
+.titleBar{
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  transition: all 0.2s ease;
+
+}
+
+.project:hover .titleBar {
+  opacity: 1;
+  height: 60px;
+  transition: all 0.2s ease;
+
 }
 
 .project a {

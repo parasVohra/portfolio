@@ -83,7 +83,7 @@
     justify-content: right;
     grid-column: 3/7;
     grid-row: 1/2 ;
-    background-image: url("../images/Screenshot\ 2020-02-07\ at\ 10.24.26\ AM.png");
+    background-image: url("../images/Screenshot\ 2020-02-09\ at\ 11.11.36\ PM.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -96,7 +96,7 @@
 .projectMobileGif{
     grid-column: 1/4;
     grid-row: 2/3 ;
-    background-image: url("../images/vegan1.png");
+    background-image: url("../images/Screenshot\ 2020-02-09\ at\ 11.04.24\ PM.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
