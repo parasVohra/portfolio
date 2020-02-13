@@ -374,7 +374,7 @@ canvas{
 }
 
 .project a{
-  line-height: 
+
 }
 
 .titleBar{
@@ -400,8 +400,13 @@ canvas{
 }
 
 .contactContainer {
-  height: 100vh;
-  background-color: lightseagreen;
+  height: 40vh;
+}
+
+.footerContainer{
+  margin: 10px;
+  color: #f4f4f4;
+  text-align: center;
 }
 
 
