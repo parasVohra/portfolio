@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,53 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="./scripts/index.js"></script>
-    
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+
 </head>
+
 <body onload="script()">
-    <div class="rootContainer" >
-        <div class="homeContainer" id="canvas" >
+    <div class="rootContainer">
+        <div class="homeContainer" id="canvas">
 
 
 
             <div class="homeLogo">
                 PARAS
-            </div>         
-                <div class="menuButton" id="menuButton" onclick="menuTrigger(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                    <div class="bar4"></div>
-                </div>
-                <div class="menuSlider" id="sliderBar">
-                    <li class="menuItem"><a href="./index.html" >HOME</a></li>
-                    <li class="menuItem"><a href="">PROJECTS</a></li>
-                    <li class="menuItem"><a href="">ABOUT ME</a></li>
-                    <li class="menuItem"><a href="">CONTACT</a></li>
-                    <li class="menuItem"><a href="">RESUME</a></li>
-                </div>
+            </div>
+            <div class="menuButton" id="menuButton" onclick="menuTrigger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+            </div>
+            <div class="menuSlider" id="sliderBar">
+                <li class="menuItem"><a class="nav-link" href="./index.html">HOME</a></li>
+                <li class="menuItem"><a class="nav-link" href="">PROJECTS</a></li>
+                <li class="menuItem"><a class="nav-link" href="">ABOUT ME</a></li>
+                <li class="menuItem"><a class="nav-link" href="">CONTACT</a></li>
+                <li class="menuItem"><a class="nav-link" href="">RESUME</a></li>
+            </div>
 
-                <div class="desktopMenu">
-                    <div class="deskMenuOptions"><a href="./index.html">HOME</a></div>
-                    <div class="deskMenuOptions"><a href="#project">PROJECTS</a></div>
-                    <div class="deskMenuOptions"><a href="">ABOUT ME</a></div>
-                    <div class="deskMenuOptions"><a href="">CONTACT</a></div>
-                    <div class="deskMenuOptions"><a href="">RESUME</a></div>
-                </div>
-    
+            <div class="desktopMenu">
+                <div class="deskMenuOptions"><a class="nav-link" href="./index.html">HOME</a></div>
+                <div class="deskMenuOptions"><a class="nav-link" href="#project">PROJECTS</a></div>
+                <div class="deskMenuOptions"><a class="nav-link" href="">ABOUT ME</a></div>
+                <div class="deskMenuOptions"><a class="nav-link" href="">CONTACT</a></div>
+                <div class="deskMenuOptions"><a class="nav-link" href="">RESUME</a></div>
+            </div>
+
+            <div class="homeQuote">
+                Hi, there <br>
+                Wellcome to my Website
+                My name is Pursharth Vohra and am a full stack developer
+            </div>
+
         </div>
 
         <div class="aboutContentBox">
             <div class="aboutContent">
-               <div class="aboutHeading">Paras vohra</div> 
-                <div class="aboutText">                I love to tranform code into imagination and i love what i do. 
+                <div class="aboutHeading">Paras vohra</div>
+                <div class="aboutText"> I love to tranform code into imagination and i love what i do.
                 </div>
             </div>
 
@@ -54,40 +63,40 @@
 
         <div class="aboutContainer">
 
-           
+
             <div class="designer devCard">
                 <img class="design Icon" src="./icons/design.svg">
                 <div class="cardTitle">Designer</div>
 
-               <div  class="cardHeading">I enjoy designing</div> 
-               <div class="cardContent">UI, UX, Web, Mobile, Logos, Sketch</div>
+                <div class="cardHeading">I enjoy designing</div>
+                <div class="cardContent">UI, UX, Web, Mobile, Logos, Sketch</div>
 
-               <div class="cardHeading">Design Tools</div>
+                <div class="cardHeading">Design Tools</div>
 
-            
-               <li> Figma</li>
-                <li>  Photoshop</li>
-                    <li>  Illustator</li>
-                        <li>  Pen And Paper</li>
-            
+
+                <li> Figma</li>
+                <li> Photoshop</li>
+                <li> Illustator</li>
+                <li> Pen And Paper</li>
+
 
 
             </div>
 
             <div class="frontEnd devCard">
-               
-                 <img class="front Icon" src="./icons/front_end.svg" alt="Frontend" > 
+
+                <img class="front Icon" src="./icons/front_end.svg" alt="Frontend">
                 <div class="cardTitle">Front End Developer</div>
 
                 <div class="cardHeading">Languages I know</div>
-               <div class="cardContent"> HTML, CSS, Sass, Less</div>
+                <div class="cardContent"> HTML, CSS, Sass, Less</div>
 
-               <div class="cardHeading">Dev Tools and Frameworks</div>
+                <div class="cardHeading">Dev Tools and Frameworks</div>
 
-               <li>Visual Studio Code</li>
-               <li>Github</li>
-               <li>Bootstrap</li>
-               <li>Terminal</li>
+                <li>Visual Studio Code</li>
+                <li>Github</li>
+                <li>Bootstrap</li>
+                <li>Terminal</li>
                 <li>Codepen</li>
                 <li>Angular</li>
                 <li>React</li>
@@ -99,39 +108,82 @@
 
             <div class="backEnd devCard">
 
-                <img class="backendIcon" src="./icons/Website_develop.svg"  >
-               <div class="cardTitle">Back End Developer</div>
+                <img class="backendIcon" src="./icons/Website_develop.svg">
+                <div class="cardTitle">Back End Developer</div>
 
-               <div class="cardHeading">Languages I know</div>
+                <div class="cardHeading">Languages I know</div>
 
-               <div class="cardContent">Node.js, php, MySql, Python, MongoDB, Express, Ajax, json, xml, ASP.net, C++</div>
+                <div class="cardContent">Node.js, php, MySql, Python, MongoDB, Express, Ajax, json, xml, ASP.net, C++
+                </div>
 
-               <div class="cardHeading">Dev Tools</div>
-               <li>Postman</li>
-               <li>GoDaddy</li>
-               <li>cpanel</li>
-               <li>AWS EC2</li>
-               <li>Azure</li>
-               <li>Digital Oceans</li>
-               <li>Mongo Atlas</li>
-               <li>Terminal</li>
+                <div class="cardHeading">Dev Tools</div>
+                <li>Postman</li>
+                <li>GoDaddy</li>
+                <li>cpanel</li>
+                <li>AWS EC2</li>
+                <li>Azure</li>
+                <li>Digital Oceans</li>
+                <li>Mongo Atlas</li>
+                <li>Terminal</li>
             </div>
-            
+
 
         </div>
         <div class="projectWrapper" id="project">
             <div class="projectsContainer">
                 <div class="projectHeading">My Projects</div>
-                <div class="project p1"> <div  class="titleBar" >Explorers Getaway</div> <a href="./project/explorersgetaway.html">Explorers</a></div>
-                <div class="project p2"><div class="titleBar">hello</div><a href="./project/ryyd.html">Ryyd</a></div>
-                <div class="project p3"><div  class="titleBar" >Explorers Getaway</div><a href="./project/theveganhood.html"> The Vegan Hood</a></div>
-                <div class="project p4"><div  class="titleBar" >Explorers Getaway</div><a href="./project/sitsky.html">Sit Ski</a></div>
-                <div class="project p5"><div  class="titleBar" >Explorers Getaway</div><a href="./project/veganGreen.html">VeganGreen</a></div>
-                <div class="project p6"><div  class="titleBar" >Explorers Getaway</div><a href="./resume/Pursharth_Resume(2019).pdf" download="Pursharth_resume.pdf">Download Your Expense Report</a></div>
+                <div class="project p1">
+                    <div class="titleBar">
+                        <div class="projName"> Vegan hood</div>
+                        <div class="viewMoreBtn">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div> <a href="./project/explorersgetaway.html">Explorers</a>
+                </div>
+                <div class="project p2">
+                    <div class="titleBar">
+                      <div class="projName">Vegan hood</div>
+                        <div class="viewMoreBtn">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div>
+                    <a href="./project/ryyd.html">Ryyd</a>
+                </div>
+                <div class="project p3">
+                    <div class="titleBar">
+                        <div class="projName"> Vegan hood</div>
+                        <div class="viewMoreBtn">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div>
+                     <a href="./project/theveganhood.html"> The Vegan Hood</a>
+                </div>
+                <div class="project p4">
+                    <div class="titleBar">
+                        <div class="projName"> Sit Ski </div>
+                        <div type="button" class="btn btn-outline-secondary">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div>
+                    <a href="./project/sitsky.html">Sit Ski</a>
+                </div>
+                <div class="project p5">
+                    <div class="titleBar">
+                        <div class="projName"> Vegan Green</div>
+                        <div class="viewMoreBtn">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div>
+                    <a href="./project/veganGreen.html">VeganGreen</a>
+                </div>
+                <div class="project p6">
+                    <div class="titleBar">
+                        <div class="projName">Explorers Getaway</div>
+                        <div class="viewMoreBtn">View More</div>
+                        <div class="showCodeBtn">See Code</div>
+                    </div>
+                    <a href="./resume/Pursharth_Resume(2019).pdf" download="Pursharth_resume.pdf">Download Your
+                        Expense Report</a>
+                </div>
             </div>
 
         </div>
-       
+
 
         <div class="contactContainer">
 
@@ -158,11 +210,11 @@
             element.classList.toggle("changed");
 
         }
-        </script>
+    </script>
 
-        <script src="./scripts/index.js"></script>
-        <script src="./threeJs/three.js"></script>
-        <script src="./threeJs/main.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./threeJs/three.js"></script>
+    <script src="./threeJs/main.js"></script>
 </body>
 
 
