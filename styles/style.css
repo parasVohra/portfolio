@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -76,16 +77,19 @@ canvas{
   height: 5px;
   background-color: white;
   margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border-radius: 5px;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5));
+
 }
 
 .menuButton .bar3 {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   background-color: white;
   border-radius: 5px;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5));
 }
 
 .menuSlider {
@@ -96,8 +100,8 @@ canvas{
   color: white;
   top: 0px;
   background-color: rgba(66, 87, 97, 0.35);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 10vh;
@@ -314,28 +318,35 @@ canvas{
 
 }
 .projectsContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-left: 20vw;
   margin-right: 20vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-rows: 150px 300px;
   grid-auto-rows: 300px;
   background-color: #f4f4f4;
+  grid-template-areas: 
+  ". proHeading ."
+  "p1 p1 p2"
+  "p1 p1 p2"
+  "p3 p4 p2"
+  "p3 p5 p6";
 }
 
 .projectHeading{
-  grid-row: 1/2;
-  grid-column: 1/4;
+  grid-area: proHeading;
   text-align: center;
   line-height: 200px;
   font-size: 40px;
 }
 
 .p1 {
-  grid-row: 2/3;
-  grid-column: 1/2;
+  grid-area: p1;
   background-image: url("../images/vegan1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -344,31 +355,31 @@ canvas{
 }
 
 .p2 {
-  grid-row: 2/3;
-  grid-column: 2/3;
+  grid-area: p2;
 
 
 }
 
 .p3 {
-  grid-row: 2/3;
-  grid-column: 1/2;
+  grid-area: p3;
 
 
 }
 
 .p4 {
-
-  grid-row: 3/4;
-  grid-column: 2/3;
+  grid-area: p4;
+ 
 
 }
 
 .p5 {
-  grid-row: 3/4;
-  grid-column: 2/3;
+  grid-area: p5;
 
 
+}
+
+.p6{
+  grid-area: p6;
 }
 
 .project{
@@ -376,34 +387,252 @@ canvas{
   position: relative;
   float: left;
   box-shadow: 4px 4px 12px black;
-  transition: all 0.2s ease-in-out;
-}
-
-.project a{
-
-}
-
-.titleBar{
-  position: absolute;
-  bottom: 0;
-  height: 80px;
-  width: 100%;
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60px ;
-  padding: 10px;
-  grid-column-gap: 10px;
-
 }
 
 .project a {
   color :black;
 }
 
+.project:hover  .titleBar{
+  display: grid;
+}
+.project:hover .proMask{
+  display: block;
+}
+
+
+.proMask{
+  display: none;
+  position: absolute;
+  background-color: #262a34;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition:  0.5s ;
+}
+
+
+.titleBar{
+  position: absolute;
+  height: 100%;
+  top:0;
+  align-items: center;
+  width: 100%;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 50px 50px 50px auto ;
+  padding: 10px;
+  grid-column-gap: 10px;
+  
+  grid-template-areas: 
+  ". . . ."
+  ". proTitle proTitle ."
+  ". showBtn showBtn ."
+  " . viewBtn viewBtn . "
+  ;
+  -webkit-transition: 0.5s;
+  transition:  0.5s;
+
+}
+
+.projName{
+  color: white;
+  grid-area: proTitle;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+.viewBtn{
+  grid-area: viewBtn;
+  border: none;
+	font-family: inherit;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+  position: relative;
+  background-color: #cb4e4e ;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+  transition: none;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
+  height: 30px;
+  opacity: unset;
+}
+
+.viewBtn:hover{
+  box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.viewBtn:active{
+  box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+
+.showBtn{
+ grid-area: showBtn;
+ align-self: center;
+ justify-self: center;
+
+  border: none;
+	font-family: inherit;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+  position: relative;
+  background-color: #4e6571;
+	color: #fff;
+	box-shadow: 0 6px #262a34;
+	-webkit-transition: none;
+	-moz-transition: none;
+  transition: none;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
+  height: 30px;
+  opacity: 1 !important;
+}
+
+.showBtn:hover{
+  box-shadow: 0 4px #262a34;
+	top: 2px;
+}
+
+.showBtn:active{
+  box-shadow: 0 0 #262a34;
+	top: 6px;
+}
+
+
 
 .contactContainer {
   height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-auto-rows: 150px;
+  grid-row-gap: 20px;
+  grid-template-areas: 
+  ". contactInfo ."
+  ". socialLinks  .";
+}
+
+.contactInfo{
+  grid-area: contactInfo;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 50px;
+  grid-template-areas: 
+  "contactTitle"
+  "emailBox"
+  "phoneBox";
+}
+
+.socialLinks{
+  grid-area: socialLinks;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 50px;
+  grid-template-areas: 
+  "lik git insta twit";
+}
+
+.contactTitle{
+  grid-area: contactTitle;
+  justify-self: center;
+  font-size: 25px;
+  color: white;
+  font-weight: 800;
+}
+
+.emailBox{
+  cursor: pointer;
+  grid-area: emailBox;
+  justify-self: center;
+}
+
+.phoneBox{
+  grid-area: phoneBox;
+  justify-self: center;
+  color: white;
+}
+
+.linkedInBox{
+  cursor: pointer;
+  grid-area: lik;
+  justify-self: center;
+ 
+}
+
+.linkedInBox img{
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  height: 40px;
+  width: 40px;
+}
+
+.linkedInBox img:hover{
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+}
+
+.githubBox{
+  cursor: pointer;
+  grid-area: git;
+  justify-self: center;
+ 
+}
+.githubBox img{
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);  height: 40px;
+  width: 40px;
+}
+.githubBox img:hover{
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+}
+
+.instaBox{
+  cursor: pointer;
+  grid-area: insta;
+  justify-self: center;
+ 
+  
+}
+
+.instaBox img{
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  height: 40px;
+  width: 40px;
+}
+.instaBox img:hover{
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+}
+
+.twitterBox{
+  cursor: pointer;
+  grid-area: twit;
+  justify-self: center;
+
+}
+
+.twitterBox img{
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  height: 40px;
+  width: 40px;
+}
+
+.twitterBox img:hover{
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
 }
 
 .footerContainer{
@@ -413,5 +642,23 @@ canvas{
 }
 
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen  and (min-width: 300px)  and (max-width: 812px) {
+  
+  .desktopMenu{
+    display: none;
+  }
 
+  .aboutContainer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .projectsContainer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+
+}
 

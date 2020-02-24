@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pursharth Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="./scripts/index.js"></script>
     <script src="./scripts/jquery-3.4.1.min.js"></script>
@@ -55,7 +56,7 @@
         <div class="aboutContentBox">
             <div class="aboutContent">
                 <div class="aboutHeading">Paras vohra</div>
-                <div class="aboutText"> I love to tranform code into imagination and i love what i do.
+                <div class="aboutText"> I love to tranform imagination into Code and i enjoy what i do.
                 </div>
             </div>
 
@@ -108,7 +109,8 @@
 
             <div class="backEnd devCard">
 
-                <img class="backendIcon" src="./icons/Website_develop.svg">
+                <!-- <img class="backendIcon" src="./icons/Website_develop.svg"> -->
+                <img class="backendIcon" src="./icons/linkedin-white.svg">
                 <div class="cardTitle">Back End Developer</div>
 
                 <div class="cardHeading">Languages I know</div>
@@ -133,49 +135,57 @@
             <div class="projectsContainer">
                 <div class="projectHeading">My Projects</div>
                 <div class="project p1">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName"> Vegan hood</div>
-                        <div class="viewMoreBtn">View More</div>
-                        <div class="showCodeBtn">See Code</div>
-                    </div> <a href="./project/explorersgetaway.html">Explorers</a>
+                        <button class="viewBtn" onclick="window.location.href = './project/explorersgetaway.html';">View More</button>
+                        <button class="showBtn">See Code</button>
+                    </div>
+                        
+                     <a href="./project/explorersgetaway.html">Explorers</a>
                 </div>
                 <div class="project p2">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                       <div class="projName">Vegan hood</div>
-                        <div class="viewMoreBtn">View More</div>
-                        <div class="showCodeBtn">See Code</div>
+                      <button class="viewBtn">View More</button>
+                      <button class="showBtn">See Code</button>
                     </div>
                     <a href="./project/ryyd.html">Ryyd</a>
                 </div>
                 <div class="project p3">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName"> Vegan hood</div>
-                        <div class="viewMoreBtn">View More</div>
-                        <div class="showCodeBtn">See Code</div>
+                        <button class="viewBtn">View More</button>
+                        <button class="showBtn">See Code</button>
                     </div>
                      <a href="./project/theveganhood.html"> The Vegan Hood</a>
                 </div>
                 <div class="project p4">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName"> Sit Ski </div>
-                        <div type="button" class="btn btn-outline-secondary">View More</div>
-                        <div class="showCodeBtn">See Code</div>
+                        <button class="viewBtn">View More</button>
+                        <button class="showBtn">See Code</button>
                     </div>
                     <a href="./project/sitsky.html">Sit Ski</a>
                 </div>
                 <div class="project p5">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName"> Vegan Green</div>
-                        <div class="viewMoreBtn">View More</div>
-                        <div class="showCodeBtn">See Code</div>
+                        <button class="viewBtn">View More</button>
+                        <button class="showBtn">See Code</button>
                     </div>
                     <a href="./project/veganGreen.html">VeganGreen</a>
                 </div>
                 <div class="project p6">
+                    <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName">Explorers Getaway</div>
-                        <div class="viewMoreBtn">View More</div>
-                        <div class="showCodeBtn">See Code</div>
+                        <button class="viewBtn" href="">View More</button>
+                        <button class="showBtn">See Code</button>
                     </div>
                     <a href="./resume/Pursharth_Resume(2019).pdf" download="Pursharth_resume.pdf">Download Your
                         Expense Report</a>
@@ -187,16 +197,21 @@
 
         <div class="contactContainer">
 
-            <div class="emailBox"></div>
-            <div class="phoneBox"></div>
-            <div class="linkedInBox"></div>
-            <div class="githubBox"></div>
-            <div class="instaBox"></div>
-            <a href="mailto:pursharth.vohra@gmail.com">Email Me</a>
-
+            <div class="contactInfo">
+                <div class="contactTitle">Contact Me</div>
+                <div class="emailBox"><a href="mailto:pursharth.vohra@gmail.com">pursharth.vohra@gmail.com</a></div>
+                <div class="phoneBox">+1 519 614 0966</div>
+            </div>
+            
+            <div class="socialLinks">
+                <div class="linkedInBox"> <a href="https:\\www.linkedin.com/in/pursharthvohra966"> <img src="./icons/linkedin.svg" alt="linkedin"> </a></div>
+                <div class="githubBox"> <a href="https://github.com/parasVohra"> <img src="./icons/github-image.svg" alt=""></a> </div>
+                <div class="instaBox"> <a href="https://www.instagram.com/pursharthvohra/?hl=en"><img src="./icons/instagram.svg" alt=""></a> </div>
+                <div class="twitterBox"> <a href="https://twitter.com/Pursharth11"><img src="./icons/twitter.svg" alt=""></a> </div>
+            </div>
+           
         </div>
         <div class="footerContainer">
-
             &copy; 2020 by Pursharth Vohra
         </div>
 
