@@ -68,6 +68,7 @@ canvas{
   color: white;
   text-align: center;
   font-size: 30px;
+  text-shadow:1px 1px 2px black;
 }
 
 .menuButton .bar1,
@@ -99,7 +100,7 @@ canvas{
   width: 30vw;
   color: white;
   top: 0px;
-  background-color: rgba(66, 87, 97, 0.35);
+  background-color: #272525;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   display: grid;
@@ -108,6 +109,7 @@ canvas{
   justify-items: center;
   font-size: 30px;
   padding-top: 15vh;
+  z-index: 2;
 }
 
 .menuItem a:hover {
@@ -121,6 +123,10 @@ canvas{
 .menuSlider .menuItem {
   position: relative;
   float: left;
+}
+
+.nav-link{
+  text-shadow: 1px 1px 4px black;
 }
 
 
@@ -395,9 +401,13 @@ canvas{
 
 .project:hover  .titleBar{
   display: grid;
+  -webkit-transition: all 0.3s ease-in;
+  transition:  all 0.3s ease-in;
 }
 .project:hover .proMask{
   display: block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 
@@ -408,8 +418,6 @@ canvas{
   opacity: 0.8;
   height: 100%;
   width: 100%;
-  -webkit-transition: 0.5s;
-  transition:  0.5s ;
 }
 
 
@@ -431,8 +439,7 @@ canvas{
   ". showBtn showBtn ."
   " . viewBtn viewBtn . "
   ;
-  -webkit-transition: 0.5s;
-  transition:  0.5s;
+  
 
 }
 
@@ -471,7 +478,7 @@ canvas{
 
 .viewBtn:hover{
   box-shadow: 0 4px #ab3c3c;
-	top: 2px;
+  top: 2px;
 }
 
 .viewBtn:active{
@@ -551,6 +558,7 @@ canvas{
 }
 
 .contactTitle{
+  text-shadow: 2px 2px 4px black;
   grid-area: contactTitle;
   justify-self: center;
   font-size: 25px;
@@ -559,12 +567,14 @@ canvas{
 }
 
 .emailBox{
+  text-shadow: 2px 2px 4px black;
   cursor: pointer;
   grid-area: emailBox;
   justify-self: center;
 }
 
 .phoneBox{
+  text-shadow: 2px 2px 4px black;
   grid-area: phoneBox;
   justify-self: center;
   color: white;
@@ -578,13 +588,13 @@ canvas{
 }
 
 .linkedInBox img{
-  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
   height: 40px;
   width: 40px;
 }
 
 .linkedInBox img:hover{
-  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
 }
 
 .githubBox{
@@ -594,11 +604,12 @@ canvas{
  
 }
 .githubBox img{
-  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);  height: 40px;
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));  
+  height: 40px;
   width: 40px;
 }
 .githubBox img:hover{
-  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
 }
 
 .instaBox{
@@ -610,12 +621,12 @@ canvas{
 }
 
 .instaBox img{
-  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
   height: 40px;
   width: 40px;
 }
 .instaBox img:hover{
-  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%)drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
 }
 
 .twitterBox{
@@ -626,16 +637,17 @@ canvas{
 }
 
 .twitterBox img{
-  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%);
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(115deg) brightness(110%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
   height: 40px;
   width: 40px;
 }
 
 .twitterBox img:hover{
-  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%);
+  filter: invert(42%) sepia(100%) saturate(2766%) hue-rotate(347deg) brightness(105%) contrast(101%) drop-shadow(3px 3px 4px rgba(0,0,0,0.5));
 }
 
 .footerContainer{
+  text-shadow: 2px 2px 4px black;
   margin: 10px;
   color: #f4f4f4;
   text-align: center;
@@ -649,15 +661,34 @@ canvas{
     display: none;
   }
 
+  .aboutContent{
+    padding: 20px ;
+  }
+
   .aboutContainer{
+
+    height: auto;
     margin-left: 5vw;
     margin-right: 5vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 500px 500px;
   }
 
   .projectsContainer{
     margin-left: 5vw;
     margin-right: 5vw;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "proHeading"
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    "p5"
+    "p6";
   }
+
+
 
 
 }

@@ -2,14 +2,18 @@
 function script(){
 
     var menuElement = document.getElementById("menuButton");
-
     menuElement.classList.add("hide")
     
     window.addEventListener('scroll', function(e) {
         last_known_scroll_position = window.scrollY;
         var menuElement = document.getElementById("menuButton");
     
-        if(last_known_scroll_position > 49){
+        if(last_known_scroll_position > 49  ){
+            menuElement.classList.remove("hide")
+            menuElement.classList.add("show");
+        }
+        
+        else if(window.outerWidth < 812) {
             menuElement.classList.remove("hide")
             menuElement.classList.add("show")
         }

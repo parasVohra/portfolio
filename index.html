@@ -34,7 +34,7 @@
                 <li class="menuItem"><a class="nav-link" href="">PROJECTS</a></li>
                 <li class="menuItem"><a class="nav-link" href="">ABOUT ME</a></li>
                 <li class="menuItem"><a class="nav-link" href="">CONTACT</a></li>
-                <li class="menuItem"><a class="nav-link" href="">RESUME</a></li>
+                <li class="menuItem"><a class="nav-link" href="./resume/resume.html">RESUME</a></li>
             </div>
 
             <div class="desktopMenu">
@@ -42,12 +42,12 @@
                 <div class="deskMenuOptions"><a class="nav-link" href="#project">PROJECTS</a></div>
                 <div class="deskMenuOptions"><a class="nav-link" href="">ABOUT ME</a></div>
                 <div class="deskMenuOptions"><a class="nav-link" href="">CONTACT</a></div>
-                <div class="deskMenuOptions"><a class="nav-link" href="">RESUME</a></div>
+                <div class="deskMenuOptions"><a class="nav-link" href="./resume/resume.html">RESUME</a></div>
             </div>
 
             <div class="homeQuote">
                 Hi, there <br>
-                Wellcome to my Website
+                Welcome to my Website
                 My name is Pursharth Vohra and am a full stack developer
             </div>
 
@@ -55,7 +55,7 @@
 
         <div class="aboutContentBox">
             <div class="aboutContent">
-                <div class="aboutHeading">Paras vohra</div>
+                <div class="aboutHeading">Somethings About myself</div>
                 <div class="aboutText"> I love to tranform imagination into Code and i enjoy what i do.
                 </div>
             </div>
@@ -109,8 +109,7 @@
 
             <div class="backEnd devCard">
 
-                <!-- <img class="backendIcon" src="./icons/Website_develop.svg"> -->
-                <img class="backendIcon" src="./icons/linkedin-white.svg">
+                <img class="backendIcon" src="./icons/Website_develop.svg">
                 <div class="cardTitle">Back End Developer</div>
 
                 <div class="cardHeading">Languages I know</div>
@@ -174,21 +173,18 @@
                 <div class="project p5">
                     <div class="proMask"></div>
                     <div class="titleBar">
-                        <div class="projName"> Vegan Green</div>
-                        <button class="viewBtn">View More</button>
+                        <div class="projName" > Vegan Green</div>
+                        <button class="viewBtn" onclick="window.location.href ='./resume/resume.html';">View More</button>
                         <button class="showBtn">See Code</button>
                     </div>
-                    <a href="./project/veganGreen.html">VeganGreen</a>
                 </div>
                 <div class="project p6">
                     <div class="proMask"></div>
                     <div class="titleBar">
                         <div class="projName">Explorers Getaway</div>
-                        <button class="viewBtn" href="">View More</button>
+                        <button class="viewBtn" onclick="window.location.href ='./resume/resume.html';">View More</button>
                         <button class="showBtn">See Code</button>
                     </div>
-                    <a href="./resume/Pursharth_Resume(2019).pdf" download="Pursharth_resume.pdf">Download Your
-                        Expense Report</a>
                 </div>
             </div>
 
@@ -220,10 +216,8 @@
         function menuTrigger(x) {
             console.log("clicked")
             x.classList.toggle("change");
-
             let element = document.getElementById("sliderBar");
             element.classList.toggle("changed");
-
         }
     </script>
 
