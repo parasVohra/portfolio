@@ -1,0 +1,172 @@
+{
+  "projects": [
+    {
+      "projectTitle": "Ryyd",
+      "liveLink": {
+        "hasLink": false,
+        "url": ""
+      },
+      "gitHubLink": {
+        "hasLink": true,
+        "url": "https://github.com/parasVohra/react_Ryyd.git"
+      },
+      "projectImageUrl": "../images/Ryyd/ryyd_dashboard.png",
+      "projectContent": [
+        {
+          "heading": "Summary",
+          "content": "Ryyd is a React Web Application which am building in oder to provide community a platform where users can offer carpooling rides and users can also search for rides options for inter-city commute.",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        },
+        {
+          "heading": "Tech Used",
+          "content": "React, Node.js, MongoDB, JWT.",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        },
+        {
+          "heading": "Challenges",
+          "content": "1) To build api to handle login, Register, logout, forget password services. </br> 2) To build API to handle operations like login, Register, Publish Rides, search rides. </br> 3) To build interactive UI for easy engagement of users with application. </br> 4) Users can search for rides based on destination, date and time.",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        },
+        {
+          "heading": "Road Map",
+          "content": "Workflow Diagram </br> Created a workflow diagram in order to keep track of application flow and also helps to connect different part of UI components.",
+          "image": {
+            "hasImage": true,
+            "url": "../images/Ryyd/ryyd_workFlow.png"
+          }
+        },
+        {
+          "heading": "UI Mockups",
+          "content": "I used Figma as interface design tool to build mockups for ryyd application and below are some mockups i made for my project. ",
+          "image": {
+            "hasImage": true,
+            "url": "../images/Ryyd/ryyd_figma.png"
+          }
+        }
+      ],
+
+      "resultImages": [
+        {
+          "url": "../images/Ryyd/ryyd_login.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_register.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_dashboard.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_offerRide.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_profileInfo.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_searchRide.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_searchResults.png"
+        },
+        {
+          "url": "../images/Ryyd/ryyd_rideInfo.png"
+        }
+      ]
+    },
+    {
+      "projectTitle": "Veganhood",
+      "liveLink": {
+        "hasLink": true,
+        "url": "http://www.theveganhood.com"
+      },
+      "gitHubLink": {
+        "hasLink": true,
+        "url": "https://github.com/parasVohra/veganblogApp.git"
+      },
+      "projectImageUrl": "../images/VeganHood/vgn_firstBlog.png",
+      "projectContent": [
+        {
+          "heading": "Summary",
+          "content": "The veganhood is a blog based on veganism and i build this project as freelance. I used Angular framework as frontend and node as backend",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        },
+        {
+          "heading": "Challenges",
+          "content": "1) To build a website with interactive UI using Angular frame work. </br> 2) To make dynamic list of blog pages and render content from json. </br> 3) To build a comment component and save comments data in mongoDB. </br> 4) To make UI responsive across all devices. ",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        }
+      ],
+
+      "resultImages": [
+        {
+          "url": "../images/VeganHood/vgn_blogList.png"
+        },
+        {
+          "url": "../images/VeganHood/vgn_blogContent.png"
+        },
+        {
+          "url": "../images/VeganHood/vgn_homeScreen.png"
+        },
+        {
+          "url": "../images/VeganHood/vgn_recipesList.png"
+        }
+      ]
+    },
+    {
+      "projectTitle": "Explorers Getaway",
+      "liveLink": {
+        "hasLink": false,
+        "url": ""
+      },
+      "gitHubLink": {
+        "hasLink": true,
+        "url": "https://github.com/parasVohra/FinalTravelWebsite"
+      },
+      "projectImageUrl": "../images/Explorers/exp_home-min.png",
+      "projectContent": [
+        {
+          "heading": "Summary",
+          "content": "The Explorers getaway is a travel agency website based and i build this project as freelance. I used Angular framework.",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        },
+        {
+          "heading": "Challenges",
+          "content": "1) To build a website with interactive UI using Angular frame work. </br>  2) To use json data to populate travel itinerary for different locations. ",
+          "image": {
+            "hasImage": false,
+            "url": ""
+          }
+        }
+      ],
+
+      "resultImages": [
+        {
+          "url": "../images/Explorers/exp_home-min.png"
+        },
+        {
+          "url": "../images/Explorers/exp_options.png"
+        },
+        {
+          "url": "../images/Explorers/exp_services.png"
+        }
+      ]
+    }
+  ]
+}

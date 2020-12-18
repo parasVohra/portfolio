@@ -18,9 +18,7 @@
   <body onload="script()">
     <div class="rootContainer">
       <div class="homeContainer" id="canvas">
-        <div class="homeLogo">
-          PV
-        </div>
+        <div class="homeLogo">PV</div>
         <div class="menuButton" id="menuButton" onclick="menuTrigger(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -65,8 +63,9 @@
 
         <div class="homeQuote">
           Hi, there <br />
-          Welcome to my Website<br />
-          My name is Pursharth Vohra and am a full stack developer
+          <br />
+          Welcome to my Website<br /><br />
+          My name is Pursharth Vohra and am a Full stack developer
         </div>
       </div>
 
@@ -74,7 +73,7 @@
         <div class="aboutContent">
           <div class="aboutHeading">Somethings About myself</div>
           <div class="aboutText">
-            I love to tranform imagination into Code and i enjoy what i do.
+            I love to transform imagination into Code.
           </div>
         </div>
       </div>
@@ -103,15 +102,13 @@
           <div class="cardContent">HTML, CSS, Sass, Less</div>
 
           <div class="cardHeading">Dev Tools and Frameworks</div>
-
-          <li>Visual Studio Code</li>
+          <li>React</li>
           <li>Github</li>
+          <li>Visual Studio Code</li>
           <li>Bootstrap</li>
           <li>Terminal</li>
           <li>Codepen</li>
           <li>Angular</li>
-          <li>React</li>
-          <li>Vue</li>
         </div>
 
         <div class="backEnd devCard">
@@ -120,12 +117,11 @@
 
           <div class="cardHeading">Languages I know</div>
 
-          <div class="cardContent">
-            Node.js, php, MySql, Python, MongoDB, Express, Ajax, json, xml,
-            ASP.net, C++
-          </div>
+          <div class="cardContent">Javascript, php, MySql</div>
 
-          <div class="cardHeading">Dev Tools</div>
+          <div class="cardHeading">Dev Tools and Frameworks</div>
+          <li>Node.js</li>
+          <li>MongoDB</li>
           <li>Postman</li>
           <li>GoDaddy</li>
           <li>cpanel</li>
@@ -141,73 +137,57 @@
           <div class="projectHeading">My Projects</div>
           <div class="project p1">
             <div class="proMask"></div>
-            <div class="titleBar">
-              <div class="projName">Vegan hood</div>
+            <div class="buttonWrapper">
+              <div class="projName">Ryyd</div>
               <button
                 class="viewBtn"
-                onclick="window.location.href = './project/explorersgetaway.html';"
+                onclick="window.location.href = './project/projects.html?id=0'"
               >
                 View More
               </button>
-              <button class="showBtn">See Code</button>
+              <button
+                class="showBtn"
+                onclick="window.open('https://github.com/parasVohra/react_Ryyd.git')"
+              >
+                See Code
+              </button>
             </div>
-
-            <a href="./project/explorersgetaway.html">Explorers</a>
           </div>
           <div class="project p2">
             <div class="proMask"></div>
-            <div class="titleBar">
+            <div class="buttonWrapper">
               <div class="projName">Vegan hood</div>
-              <button class="viewBtn">View More</button>
-              <button class="showBtn">See Code</button>
-            </div>
-
-            <a href="./project/ryyd.html">Ryyd</a>
-          </div>
-          <div class="project p3">
-            <div class="proMask">
-              <div class="projName">Vegan hood</div>
-            </div>
-
-            <div class="titleBar">
-              <button class="viewBtn">View More</button>
-              <button class="showBtn">See Code</button>
-            </div>
-            <a href="./project/theveganhood.html"> The Vegan Hood</a>
-          </div>
-          <div class="project p4">
-            <div class="proMask"></div>
-            <div class="titleBar">
-              <div class="projName">Sit Ski</div>
-              <button class="viewBtn">View More</button>
-              <button class="showBtn">See Code</button>
-            </div>
-            <a href="./project/sitsky.html">Sit Ski</a>
-          </div>
-          <div class="project p5">
-            <div class="proMask"></div>
-            <div class="titleBar">
-              <div class="projName">Vegan Green</div>
               <button
                 class="viewBtn"
-                onclick="window.location.href ='./resume/resume.html';"
+                onclick="window.location.href = './project/projects.html?id=1'"
               >
                 View More
               </button>
-              <button class="showBtn">See Code</button>
+              <button
+                class="showBtn"
+                onclick="window.open('https://github.com/parasVohra/veganblogApp.git')"
+              >
+                See Code
+              </button>
             </div>
           </div>
-          <div class="project p6">
+          <div class="project p3">
             <div class="proMask"></div>
-            <div class="titleBar">
+
+            <div class="buttonWrapper">
               <div class="projName">Explorers Getaway</div>
               <button
                 class="viewBtn"
-                onclick="window.location.href ='./resume/resume.html';"
+                onclick="window.location.href = './project/projects.html?id=2'"
               >
                 View More
               </button>
-              <button class="showBtn">See Code</button>
+              <button
+                class="showBtn"
+                onclick="window.open('https://github.com/parasVohra/FinalTravelWebsite')"
+              >
+                See Code
+              </button>
             </div>
           </div>
         </div>
@@ -247,9 +227,7 @@
           </div>
         </div>
       </div>
-      <div class="footerContainer">
-        &copy; 2020 by Pursharth Vohra
-      </div>
+      <div class="footerContainer">&copy; 2020 by Pursharth Vohra</div>
     </div>
     <script>
       function menuTrigger(x) {

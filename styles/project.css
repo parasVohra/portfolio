@@ -1,0 +1,156 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: "Audiowide";
+  src: url("../fonts/Audiowide-Regular.ttf") format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #262a34;
+  -webkit-font-smoothing: antialiased;
+}
+
+.homeLogo {
+  font-family: "Audiowide";
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 20px;
+  width: 150px;
+  color: lightskyblue;
+  font-weight: 800;
+  font-size: calc(20px + 0.1vw);
+}
+
+.rootContainer {
+  scroll-behavior: smooth;
+  height: auto;
+  width: 100vw;
+}
+
+.backBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  height: 30px;
+  width: auto;
+  color: rgb(27, 69, 95);
+  font-weight: 800;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.contentContainer {
+  position: absolute;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  top: 20vh;
+  height: auto;
+  width: 80vw;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.projectTitle {
+  font-weight: 800;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.56);
+}
+
+.buttonContainer {
+  width: 100%;
+  margin-bottom: 50px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a b ";
+  column-gap: 20px;
+  justify-items: center;
+}
+
+.Btn {
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 0.4em 1.45em;
+  box-shadow: 3px 3px 8px #00000029;
+}
+.viewCode {
+  grid-area: a;
+  border-color: grey;
+  color: grey;
+  cursor: pointer;
+}
+
+.liveDemo {
+  grid-area: b;
+  border-color: #368fcf;
+  color: #368fcf;
+  cursor: pointer;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 3em;
+  box-shadow: 3px 3px 8px #00000029;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.contentTitle {
+  padding: 1em 0em;
+  font-weight: bold;
+}
+
+.contentText {
+  padding-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.resultTitle {
+  padding: 1em 0em;
+  font-weight: bold;
+}
+
+.resultImage {
+  width: 100%;
+  height: auto;
+}
+
+.resImgStyle {
+  border-radius: 6px;
+  margin-bottom: 3em;
+  box-shadow: 3px 3px 8px #00000029;
+}
+
+@media screen and (max-width: 480px) {
+  .contentContainer {
+    width: 100vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}

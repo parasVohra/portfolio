@@ -61,6 +61,7 @@ canvas {
   top: 50%;
   left: 50%;
   width: 100%;
+  padding: 20px;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
@@ -197,18 +198,17 @@ canvas {
 /*   about section */
 
 .aboutContentBox {
-  height: 300px;
+  height: 250px;
   width: 100vw;
 }
 
 .aboutContent {
-  height: 300px;
+  height: 250px;
   background-color: #4e6571;
   margin-left: 10vw;
   margin-right: 10vw;
   padding-top: 50px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 6px;
   text-align: center;
   font-size: 30px;
   color: white;
@@ -234,7 +234,7 @@ canvas {
   padding-top: 10px;
   margin-left: 20vw;
   margin-right: 20vw;
-  margin-top: -50px;
+  margin-top: -70px;
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -285,19 +285,19 @@ canvas {
 }
 
 .designer {
-  border-radius: 12px;
+  border-radius: 6px;
   background: white;
   text-align: center;
 }
 
 .frontEnd {
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: white;
   text-align: center;
 }
 
 .backEnd {
-  border-radius: 12px;
+  border-radius: 6px;
   background-color: white;
   text-align: center;
 }
@@ -305,7 +305,7 @@ canvas {
 .projectWrapper {
   margin-top: 50px;
   margin-bottom: 50px;
-  min-height: 120vh;
+  min-height: 80vh;
   width: 100vw;
   background-color: #f4f4f4;
 }
@@ -314,7 +314,7 @@ canvas {
   padding-bottom: 50px;
   margin-left: 20vw;
   margin-right: 20vw;
-  min-height: 100vh;
+  min-height: 70vh;
   max-height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -330,24 +330,32 @@ canvas {
 
 .projectHeading {
   grid-area: proHeading;
+  font-family: inherit;
   text-align: center;
-  line-height: 200px;
-  font-size: 40px;
+  align-self: center;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .p1 {
   grid-area: p1;
-  background-image: url("../images/vegan1.png");
+  background-image: url("../images/Ryyd/ryyd_dashboard.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .p2 {
   grid-area: p2;
+  background-image: url("../images/VeganHood/vgn_firstBlog.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .p3 {
   grid-area: p3;
+  background-image: url("../images/Explorers/exp_home-min.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .p4 {
@@ -368,14 +376,11 @@ canvas {
   float: left;
   box-shadow: 3px 3px 8px #00000029;
   transition: all 1s ease-in;
-}
-
-.project a {
-  color: black;
+  border-radius: 6px;
 }
 
 .project:hover .proMask {
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.5s ease-out;
 }
 .project:hover .titleBar {
@@ -390,7 +395,7 @@ canvas {
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
-.project:hover .proName {
+.project:hover .projName {
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
@@ -404,33 +409,42 @@ canvas {
   transition: opacity 0.5s ease-in;
 }
 
-.titleBar {
+.buttonWrapper {
   position: absolute;
-  bottom: 2px;
+  bottom: 20px;
   width: 100%;
-  height: 100px;
+  height: 120px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1vw;
+  grid-template-areas:
+    " projName projName"
+    " viewBtn codeBtn";
 }
 
 .projName {
-  color: white;
-  grid-area: proTitle;
+  color: black;
+  grid-area: projName;
   text-align: center;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 100%;
   opacity: 0;
 }
 
 .viewBtn {
-  display: inline-block;
+  position: relative;
+  grid-area: viewBtn;
+  margin-left: 1vw;
+  margin-right: 1vw;
   border: none;
   font-family: inherit;
   cursor: pointer;
-  margin-right: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   outline: none;
-  position: relative;
-  float: left;
   background-color: #cb4e4e;
   color: #fff;
   box-shadow: 0 3px #ab3c3c;
@@ -450,17 +464,17 @@ canvas {
 }
 
 .showBtn {
-  display: inline-block;
+  position: relative;
+  grid-area: codeBtn;
+  margin-left: 1vw;
+  margin-right: 1vw;
   border: none;
   font-family: inherit;
   cursor: pointer;
-  margin-right: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   outline: none;
-  position: relative;
-  float: left;
   background-color: #4e6571;
   color: #fff;
   box-shadow: 0 3px #262a34;
@@ -639,5 +653,30 @@ canvas {
       "p4"
       "p5"
       "p6";
+  }
+
+  .projName {
+    color: black;
+    grid-area: projName;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(30px + 0.1vw);
+    line-height: 100%;
+    opacity: 0;
+  }
+
+  .buttonWrapper {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas:
+      " . projName projName projName projName . "
+      " . viewBtn viewBtn codeBtn codeBtn .  ";
   }
 }
