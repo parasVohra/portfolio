@@ -3,7 +3,7 @@
     {
       "projectTitle": "Ryyd",
       "liveLink": {
-        "hasLink": false,
+        "hasLink": true,
         "url": "https://parasVohra.github.io/react_Ryyd/"
       },
       "gitHubLink": {
@@ -129,7 +129,7 @@
     {
       "projectTitle": "Explorers Getaway",
       "liveLink": {
-        "hasLink": false,
+        "hasLink": true,
         "url": "https://parasVohra.github.io/FinalTravelWebsite/"
       },
       "gitHubLink": {
